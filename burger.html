@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Recipe</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef8bc;
+            padding: 20px;
+        }
+
+        .recipe-container {
+            max-width: 100%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(227, 18, 18, 0.1);
+            background-color: navajowhite;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #1620d7;
+            letter-spacing: 1px;
+            border-bottom: 2px solid #ff6347;
+            padding-bottom: 10px;
+        }
+
+        /* Flexbox for image and ingredients */
+        .image-ingredients-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        img {
+            height: 350px;
+            width: 400px;
+            border-radius: 8px;
+        }
+
+        .ingredients {
+            flex: 1;
+            margin-left: 20px; /* Space between image and ingredients */
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #f10606;
+            text-decoration: underline;
+        }
+
+        ul {
+            padding-left: 20px;
+            line-height: 1.6;
+        }
+
+        ul li {
+            font-size: 25px;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .recipe-steps {
+            margin-top: 20px;
+        }
+
+        ol {
+            padding-left: 20px;
+            line-height: 1.6;
+        }
+
+        ol li {
+            font-size: 25px;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        /* Animation */
+        .recipe-container {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .image-ingredients-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .ingredients {
+                margin-left: 0;
+                margin-top: 20px;
+                text-align: center;
+            }
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+            }
+
+            ul li, ol li {
+                font-size: 1rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="recipe-container">
+        <h1>The Classic Paneer Burger</h1>
+        
+        <!-- Image and Ingredients Section -->
+        <div class="image-ingredients-container">
+            <!-- Burger Image -->
+            <img src="C:\Users\Administrator\Downloads\recipe manager\images\panner(recipes).jfif" alt="Burger">
+
+            <!-- Ingredients Section -->
+            <div class="ingredients">
+                <h2>Ingredients</h2>
+                <ul>
+                    <li>2 burger buns</li>
+                    <li>1 beef patty</li>
+                    <li>1 slice cheddar cheese</li>
+                    <li>1 tomato (sliced)</li>
+                    <li>Lettuce leaves</li>
+                    <li>Ketchup and mayonnaise</li>
+                    <li>Salt and pepper to taste</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Recipe Steps -->
+        <div class="recipe-steps">
+            <h2>Instructions</h2>
+            <ol>
+                <li>Grill the beef patty on medium heat until fully cooked.</li>
+                <li>Toast the burger buns until golden brown.</li>
+                <li>Place the cooked patty on the bottom bun.</li>
+                <li>Add a slice of cheddar cheese on top of the patty.</li>
+                <li>Layer with tomato slices, lettuce leaves, ketchup, and mayonnaise.</li>
+                <li>Season with salt and pepper as desired.</li>
+                <li>Place the top bun to complete your burger.</li>
+                <li>Serve hot and enjoy your burger!</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>

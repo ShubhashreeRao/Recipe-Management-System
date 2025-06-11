@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Chilli Salmon Recipe</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef8bc;
+            padding: 20px;
+        }
+
+        .recipe-container {
+            max-width: 100%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(227, 18, 18, 0.1);
+            background-color: navajowhite;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #1620d7;
+            letter-spacing: 1px;
+            border-bottom: 2px solid #ff6347;
+            padding-bottom: 10px;
+        }
+
+        /* Flexbox for image and ingredients */
+        .image-ingredients-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+
+        img {
+            height: 350px;
+            width: 400px;
+            border-radius: 8px;
+        }
+
+        .ingredients {
+            flex: 1;
+            margin-left: 20px; /* Space between image and ingredients */
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #f10606;
+            text-decoration: underline;
+        }
+
+        ul {
+            padding-left: 20px;
+            line-height: 1.6;
+        }
+
+        ul li {
+            font-size: 25px;
+            color: #333;
+            margin-bottom: 15px;
+            
+            
+        }
+
+        .recipe-steps {
+            margin-top: 20px;
+        }
+
+        ol {
+            padding-left: 20px;
+            line-height: 1.6;
+        }
+
+        ol li {
+            font-size: 25px;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        /* Animation */
+        .recipe-container {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .image-ingredients-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .ingredients {
+                margin-left: 0;
+                margin-top: 20px;
+                text-align: center;
+            }
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+            }
+
+            ul li, ol li {
+                font-size: 1rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Recipe Header -->
+        <header>
+            <h1>Sweet Chilli Salmon</h1>
+            <p>Makes 2 Servings</p>
+        </header>
+
+        <!-- Image Section -->
+        <div class="image-container">
+            <img src="file:///C:/Users/Administrator/Downloads/recipe%20manager/images/noodles(recipes.jfif" alt="Sweet Chilli Salmon">
+        </div>
+
+        <!-- Recipe Description -->
+        <section class="description">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta.
+            </p>
+        </section>
+
+        <!-- Ingredients Section -->
+        <section class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>2 tsp olive oil</li>
+                <li>2 salmon fillets</li>
+                <li>1 cup cooked quinoa</li>
+                <li>1 cup mixed vegetables</li>
+                <li>1 tbsp sweet chilli sauce</li>
+            </ul>
+        </section>
+
+        <!-- Instructions Section -->
+        <section class="instructions">
+            <h2>Instructions</h2>
+            <ol>
+                <li>Heat oil in a pan over medium heat. Add salmon fillets and cook for 4-5 minutes on each side.</li>
+                <li>In a separate pan, sauté mixed vegetables until tender.</li>
+                <li>Cook quinoa according to package instructions.</li>
+                <li>Serve salmon with quinoa, vegetables, and a drizzle of sweet chilli sauce.</li>
+            </ol>
+        </section>
+    </div>
+</body>
+</html>

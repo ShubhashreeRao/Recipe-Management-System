@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mint Juice Recipe</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f5e1;
+            padding: 20px;
+        }
+
+        .recipe-container {
+            width: 100%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #4caf50;
+            font-family: 'Arial', sans-serif;
+            letter-spacing: 1px;
+            border-bottom: 2px solid #388e3c;
+            padding-bottom: 10px;
+        }
+
+        .content-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .image-container {
+            flex: 1;
+            text-align: left;
+            margin-right: 20px;
+        }
+
+        .image-container img {
+            max-width: 100%; /* Responsive width */
+            max-height: 400px; /* Maximum height to prevent overflow */
+            width: 500px;
+            height:350px; /* Maintain aspect ratio */
+            border-radius: 8px;
+        }
+
+        .ingredients {
+            flex: 1;
+        }
+
+        h2 {
+            font-size: 25px;
+            margin-bottom: 10px;
+            color: #d32f2f;
+            text-decoration: underline;
+        }
+
+        ul, ol {
+            padding-left: 20px;
+            line-height: 1.6;
+        }
+
+        ul li, ol li {
+            font-size: 25px;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .recipe-steps {
+            margin-top: 20px;
+        }
+
+        .recipe-steps ol {
+            list-style-type: decimal;
+        }
+
+        .recipe-container {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        p {
+            padding: 20px;
+            font-weight: bold;
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="recipe-container">
+        <h1>Mint Juice</h1>
+        
+        <!-- Image and Ingredients Side by Side -->
+        <div class="content-wrapper">
+            <!-- Mint Juice Image -->
+            <div class="image-container">
+                <img src="C:\Users\Administrator\Downloads\recipe manager\images\mint(recipes).jfif" alt="Mint Juice">
+            </div>
+
+            <!-- Ingredients Section -->
+            <div class="ingredients">
+                <h2>Ingredients</h2>
+                <ul>
+                    <li>1 cup fresh mint leaves</li>
+                    <li>1/2 cup cold water</li>
+                    <li>1-2 teaspoons sugar or honey (optional)</li>
+                    <li>1 tablespoon lemon juice</li>
+                    <li>Ice cubes (optional)</li>
+                    <li>Mint leaves for garnish (optional)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Recipe Steps Below the Image -->
+        <div class="recipe-steps">
+            <h2>Instructions</h2>
+            <ol>
+                <li>Wash the fresh mint leaves thoroughly.</li>
+                <li>Add the mint leaves and cold water to a blender.</li>
+                <li>Blend until smooth.</li>
+                <li>Strain the mixture through a fine sieve to separate the juice from the pulp (optional).</li>
+                <li>Stir in the lemon juice and sugar or honey (if using).</li>
+                <li>Pour the mint juice into glasses over ice cubes.</li>
+                <li>Garnish with fresh mint leaves and serve chilled.</li>
+            </ol>
+            <p>
+                Tips: 
+                For added flavor, you can include a slice of ginger or a pinch of salt. Enjoy your refreshing mint juice!
+            </p>
+        </div>
+    </div>
+</body>
+</html>

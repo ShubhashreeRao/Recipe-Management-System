@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soft Chocolate Chip Cookies</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            padding: 20px;
+            color: white;
+        }
+
+        .recipe-container {
+            color: #fff;
+            max-width: 100%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(227, 18, 18, 0.1);
+            animation: fadeIn 1s ease-in-out;
+            background-color: bisque;
+            
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #4618dc;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Set image size to 300px by 300px */
+        img {
+            height: 350px;
+            width: 500px;
+            border-radius: 8px;
+        }
+
+        .image-container {
+            display: flex;
+            flex-wrap: wrap; /* Ensures responsiveness */
+            justify-content: space-between; /* Adjusts the spacing */
+            align-items: flex-start; /* Align ingredients to the top of the image */
+            margin-bottom: 20px; /* Space between image/ingredients and instructions */
+        }
+
+        .ingredients {
+            flex: 1; /* Takes up available width */
+            margin-left: 20px; /* Space between image and ingredients */
+            text-align: right; /* Align text to the right */
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #f10606;
+            text-decoration: underline;
+        }
+
+        ul {
+            list-style-type: disc; /* Restore bullet points */
+            padding-left: 20px; /* Indent the list */
+        }
+
+        ul li {
+            font-size: 25px;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .recipe-steps {
+            margin-top: 20px; /* Space between instructions and ingredients/image section */
+        }
+
+        ol {
+            padding-left: 20px;
+            line-height: 1.6;
+        }
+
+        ol li {
+            font-size: 25px;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        p {
+            padding: 20px;
+            font-weight: bold;
+            color: red;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .image-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .image-container img, .ingredients {
+                max-width: 100%;
+                margin-left: 0;
+            }
+
+            .ingredients {
+                text-align: center;
+                margin-top: 20px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+    <div class="recipe-container">
+        <h1><i>Soft Chocolate Chip Cookies</i></h1><br><br>
+        
+        <!-- Image and Ingredients Section -->
+        <div class="image-container">
+            <img src="C:\Users\Administrator\Downloads\recipe manager\images\cookies.jfif" alt="The Best Soft Chocolate Chip Cookies">
+            <div class="ingredients">
+                <h2 style="text-align: left;">Ingredients</h2>
+                <ul style="text-align: left;">
+                    <li>1 cup (226g) unsalted butter, softened</li>
+                    <li>3/4 cup (150g) granulated sugar</li>
+                    <li>3/4 cup (165g) brown sugar, packed</li>
+                    <li>2 large eggs</li>
+                    <li>1 teaspoon vanilla extract</li>
+                    <li>1 teaspoon baking soda</li>
+                    <li>2 cups (340g) semi-sweet chocolate chips</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Recipe Steps -->
+        <div class="recipe-steps">
+            <h2>Instructions</h2>
+            <ol>
+                <li>Preheat your oven to 350°F (175°C). Line a baking sheet with parchment paper.</li>
+                <li>In a large bowl, beat together the softened butter, granulated sugar, and brown sugar until light and fluffy (about 2-3 minutes).</li>
+                <li>Add the eggs one at a time, beating well after each addition.</li>
+                <li>In a separate bowl, whisk together the flour, baking soda, and salt.</li>
+                <li>Gradually add the dry ingredients to the wet ingredients, mixing until combined.</li>
+                <li>Stir in the semi-sweet chocolate chips.</li>
+                <li>Using a cookie scoop or tablespoon, drop dough onto the prepared baking sheet. Leave about 2 inches of space between each cookie.</li>
+                <li>Bake for 9-11 minutes, until the edges are just starting to brown but the center still looks soft.</li>
+                <li>Let the cookies cool on the baking sheet for 5 minutes, then transfer them to a wire rack to cool completely.</li>
+            </ol>
+            <p style="font-size: 25px;">
+                Tips:
+                <br>
+                - Use room temperature butter for the best texture.
+                <br>
+                - Don’t overbake; cookies will continue to firm up as they cool.
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
